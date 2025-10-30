@@ -1,32 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Gabryel Fillipe</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portifolio Gabryel FIllipe</title>
+    <script src="script.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <h1>Portifolio</h1>
-        <menu>
-            <li>
-                <a href="#">home</a>
-            </li>
-            <li>
-                <a href="#">projetos</a>
-            </li>
-            <li>
-                <a href="#">contato</a>
-            </li>
-        </menu>
+
+    <header class="header">
+        <a href="#" class="logo">Gabryel Fillipe</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <i class="fas fa-bars" id="menu-icon"></i>
     </header>
+
     <main>
-        <section class="Apresentacao">
-            <img src="" alt="">
-            <h2>Bem vindo ao</h2>
-            <p>Atualmente</p>
+        <section class="home" id="home">
+            <div class="home-content">
+
+                <img src="./img/gabryel-fillipe.jpg" alt="Foto de Perfil do Gabryel Fillipe" class="avatar">
+
+                <h1>Desenvolvedor em formação, pronto para <span class="highlight">impactar</span>.</h1>
+
+                <p>
+                    Atleta de vôlei amador, divido minha paixão entre as quadras e o universo do código.
+                    Atualmente, estou concluindo o curso técnico em Desenvolvimento de Sistemas e cursando
+                    Engenharia de Software, focado em construir soluções robustas e eficientes.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="https://www.linkedin.com/in/gabryel-fillipe/" target="_blank"
+                        class="btn btn-primary">Entrar em Contato</a>
+
+                    <a href="https://drive.google.com/file/d/1HEWM8SCm63LRQqkq69xHm2KBKFoRT9XI/view?usp=drive_link" target="_blank" class="btn btn-secondary">Download CV</a>
+                </div>
+
+                <div class="tech-stack">
+                    <h3>Minhas Tecnologias:</h3>
+                    <div class="tech-icons">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js" title="Node.js">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            alt="Java" title="Java">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"
+                            title="C">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            alt="Python" title="Python">
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="projects" id="projetos">
+            <h2>Projetos</h2>
+            <div class="projects-grid">
+
+                <a href="https://github.com/GabryelFillipe/Team-Builder-PokeAPI" target="_blank" class="project-card">
+
+                    <img src="./img/team-builder2.png"
+                        alt="Capa do Projeto Team Builder PokeAPI" class="projeto-img">
+                    <div class="project-info">
+                        <h3>Team Builder (PokeAPI)</h3>
+                        <p>Front-end | JavaScript | API</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/GabryelFillipe/PBE-API-Filme" target="_blank" class="project-card">
+
+                    <img src="./img/filmes.png"
+                        alt="Capa do Projeto API de Filmes">
+                    <div class="project-info">
+                        <h3>API de Filmes (Prisma)</h3>
+                        <p>Back-end | Node.js | Prisma</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="experience" id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Graduação em Engenharia de Software</h3>
+                        <span class="timeline-company">Instituição de Ensino Superior</span>
+                        <span class="timeline-date">2025 - Presente (Estimado)</span>
+                        <p>Estudando os fundamentos e práticas avançadas de engenharia de software, arquitetura de
+                            sistemas e gerenciamento de projetos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Técnico em Desenvolvimento de Sistemas</h3>
+                        <span class="timeline-company">Instituição Senai Jandira</span>
+                        <span class="timeline-date">2025 - Em conclusão</span>
+                        <p>Desenvolvendo habilidades práticas em lógica de programação, banco de dados, desenvolvimento
+                            web (front-end) e de APIs (back-end).</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer" id="contato">
+        <h2>Vamos conversar?</h2>
+        <p>Estou sempre aberto a novas conexões, oportunidades de aprendizado e desafios.</p>
+
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/gabryel-fillipe/" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/GabryelFillipe" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+
+        <p class="copyright">
+            © <span id="current-year"></span> Gabryel Fillipe. Feito com <i class="fa fa-heart"></i> e muito código.
+        </p>
+    </footer>
+
 </body>
+
 </html>
